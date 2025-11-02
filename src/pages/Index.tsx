@@ -4,6 +4,8 @@ import { CurrentWork } from "@/components/CurrentWork";
 import { RecentWork } from "@/components/RecentWork";
 import { Stats } from "@/components/Stats";
 import { Principles } from "@/components/Principles";
+import { SlidingImages } from "@/components/SlidingImages";
+import { SlidingText } from "@/components/SlidingText";
 
 const Index = () => {
   return (
@@ -15,6 +17,8 @@ const Index = () => {
         <RecentWork />
         <Stats />
         <Principles />
+        <SlidingImages />
+        <SlidingText />
       </main>
     </div>
   );

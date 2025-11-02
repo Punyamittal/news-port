@@ -5,9 +5,9 @@ import project3 from "@/assets/project-3.jpg";
 
 export const RecentWork = () => {
   return (
-    <section className="px-6 md:px-12 py-16">
+    <section className="px-6 md:px-12 py-16 transition-all duration-700 hover:bg-[hsl(var(--color-background))] group">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl md:text-5xl font-display mb-12 tracking-tight">
+        <h2 className="text-3xl md:text-5xl font-display mb-12 tracking-tight transition-colors duration-500 group-hover:text-[hsl(var(--color-accent))]">
           recent work
         </h2>
         <div className="grid md:grid-cols-2 gap-8">
@@ -32,13 +32,17 @@ export const RecentWork = () => {
             link="#"
             linkText="See Website"
           />
-          <div className="bg-card rounded-2xl border border-border p-12 flex items-center justify-center">
+          <div className="bg-card rounded-2xl border-2 border-foreground p-12 flex items-center justify-center transition-all duration-700 hover:bg-[hsl(var(--color-background))] hover:border-[hsl(var(--color-secondary))] hover:shadow-2xl hover:-translate-y-2 group/coming">
             <div className="text-center space-y-4">
-              <h3 className="text-2xl md:text-3xl font-display">
+              <h3 className="text-2xl md:text-3xl font-display transition-colors duration-500 group-hover/coming:text-[hsl(var(--color-accent))]">
                 Streamlining the critical flows
               </h3>
-              <p className="text-muted-foreground">Reduced setup time to 50%</p>
-              <p className="text-sm text-muted-foreground font-medium mt-6">Coming Soon</p>
+              <p className="text-muted-foreground transition-colors duration-500 group-hover/coming:text-[hsl(var(--color-primary))]">
+                Reduced setup time to 50%
+              </p>
+              <p className="text-sm text-muted-foreground font-medium mt-6 transition-colors duration-500 group-hover/coming:text-[hsl(var(--color-highlight))]">
+                Coming Soon
+              </p>
             </div>
           </div>
         </div>

@@ -8,83 +8,72 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 35 25% 92%;
-    --foreground: 30 10% 15%;
+    --background: 0 0% 98%;
+    --foreground: 0 0% 10%;
 
-    --card: 35 30% 95%;
-    --card-foreground: 30 10% 15%;
+    --card: 0 0% 95%;
+    --card-foreground: 0 0% 10%;
 
-    --popover: 35 30% 95%;
-    --popover-foreground: 30 10% 15%;
+    --popover: 0 0% 95%;
+    --popover-foreground: 0 0% 10%;
 
-    --primary: 30 10% 15%;
-    --primary-foreground: 35 25% 92%;
+    --primary: 0 0% 10%;
+    --primary-foreground: 0 0% 98%;
 
-    --secondary: 35 20% 85%;
-    --secondary-foreground: 30 10% 15%;
+    --secondary: 0 0% 85%;
+    --secondary-foreground: 0 0% 10%;
 
-    --muted: 35 20% 85%;
-    --muted-foreground: 30 10% 40%;
+    --muted: 0 0% 85%;
+    --muted-foreground: 0 0% 40%;
 
-    --accent: 30 15% 25%;
-    --accent-foreground: 35 25% 92%;
+    --accent: 0 0% 25%;
+    --accent-foreground: 0 0% 98%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 35 25% 92%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 35 15% 80%;
-    --input: 35 15% 80%;
-    --ring: 30 10% 15%;
+    --border: 0 0% 20%;
+    --input: 0 0% 80%;
+    --ring: 0 0% 10%;
 
     --radius: 0.75rem;
 
-    --sidebar-background: 35 25% 92%;
-    --sidebar-foreground: 30 10% 15%;
-    --sidebar-primary: 30 10% 15%;
-    --sidebar-primary-foreground: 35 25% 92%;
-    --sidebar-accent: 35 20% 85%;
-    --sidebar-accent-foreground: 30 10% 15%;
-    --sidebar-border: 35 15% 80%;
-    --sidebar-ring: 30 10% 15%;
+    /* Colored versions for hover states */
+    --color-background: 35 25% 92%;
+    --color-primary: 30 10% 15%;
+    --color-accent: 280 65% 60%;
+    --color-secondary: 35 70% 65%;
+    --color-highlight: 45 95% 55%;
   }
 
   .dark {
-    --background: 30 10% 15%;
-    --foreground: 35 25% 92%;
+    --background: 0 0% 10%;
+    --foreground: 0 0% 98%;
 
-    --card: 30 15% 20%;
-    --card-foreground: 35 25% 92%;
+    --card: 0 0% 15%;
+    --card-foreground: 0 0% 98%;
 
-    --popover: 30 15% 20%;
-    --popover-foreground: 35 25% 92%;
+    --popover: 0 0% 15%;
+    --popover-foreground: 0 0% 98%;
 
-    --primary: 35 25% 92%;
-    --primary-foreground: 30 10% 15%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 10%;
 
-    --secondary: 30 10% 25%;
-    --secondary-foreground: 35 25% 92%;
+    --secondary: 0 0% 25%;
+    --secondary-foreground: 0 0% 98%;
 
-    --muted: 30 10% 25%;
-    --muted-foreground: 35 15% 60%;
+    --muted: 0 0% 25%;
+    --muted-foreground: 0 0% 60%;
 
-    --accent: 35 20% 85%;
-    --accent-foreground: 30 10% 15%;
+    --accent: 0 0% 85%;
+    --accent-foreground: 0 0% 10%;
 
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 35 25% 92%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 30 10% 25%;
-    --input: 30 10% 25%;
-    --ring: 35 25% 92%;
-    
-    --sidebar-background: 30 10% 15%;
-    --sidebar-foreground: 35 25% 92%;
-    --sidebar-primary: 35 25% 92%;
-    --sidebar-primary-foreground: 30 10% 15%;
-    --sidebar-accent: 30 10% 25%;
-    --sidebar-accent-foreground: 35 25% 92%;
-    --sidebar-border: 30 10% 25%;
-    --sidebar-ring: 35 25% 92%;
+    --border: 0 0% 25%;
+    --input: 0 0% 25%;
+    --ring: 0 0% 98%;
   }
 }
 
