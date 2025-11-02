@@ -8,53 +8,55 @@ export const SlidingText = () => {
     "Less is more",
     "Form follows function",
     "Design is thinking",
+    "Simplicity is complexity resolved",
+    "Good design is obvious",
+    "Great design is invisible",
+    "Beauty emerges from selection",
+    "Clarity trumps cleverness",
+    "Content precedes design",
+    "Think more, design less",
+    "User experience is everything",
+    "Iteration leads to innovation",
+    "Constraints inspire creativity",
+    "Empathy drives great design",
+    "Purpose shapes form",
   ];
 
   return (
-    <section className="py-16 overflow-hidden bg-foreground transition-all duration-700 hover:bg-[hsl(var(--color-primary))]">
-      <div className="relative">
-        {/* First row - sliding right */}
-        <div className="flex animate-slide-right mb-8 hover:pause">
+    <section className="py-12 overflow-hidden bg-foreground transition-all duration-700 hover:bg-[hsl(var(--color-primary))] relative">
+      {/* Top border line - full width */}
+      <div className="absolute top-0 left-0 right-0 border-t-2 border-background"></div>
+      {/* Bottom border line - full width */}
+      <div className="absolute bottom-0 left-0 right-0 border-b-2 border-background"></div>
+      <div className="relative overflow-hidden">
+        {/* Continuous scrolling line */}
+        <div className="flex animate-slide-right hover:pause">
           {texts.map((text, index) => (
             <div
-              key={`right-first-${index}`}
-              className="flex-shrink-0 mx-8 group"
+              key={`first-${index}`}
+              className="flex-shrink-0 flex items-center group mx-8 md:mx-12 lg:mx-16"
             >
-              <h3 className="text-4xl md:text-6xl font-display text-background transition-all duration-700 group-hover:text-[hsl(var(--color-accent))] group-hover:scale-110 whitespace-nowrap">
+              <h3 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-display text-background transition-all duration-700 group-hover:text-[hsl(var(--color-accent))] group-hover:scale-110 whitespace-nowrap">
                 {text}
               </h3>
             </div>
           ))}
           {texts.map((text, index) => (
             <div
-              key={`right-second-${index}`}
-              className="flex-shrink-0 mx-8 group"
+              key={`second-${index}`}
+              className="flex-shrink-0 flex items-center group mx-8 md:mx-12 lg:mx-16"
             >
-              <h3 className="text-4xl md:text-6xl font-display text-background transition-all duration-700 group-hover:text-[hsl(var(--color-accent))] group-hover:scale-110 whitespace-nowrap">
-                {text}
-              </h3>
-            </div>
-          ))}
-        </div>
-
-        {/* Second row - sliding left */}
-        <div className="flex animate-slide-left hover:pause">
-          {texts.reverse().map((text, index) => (
-            <div
-              key={`left-first-${index}`}
-              className="flex-shrink-0 mx-8 group"
-            >
-              <h3 className="text-4xl md:text-6xl font-display text-background transition-all duration-700 group-hover:text-[hsl(var(--color-secondary))] group-hover:scale-110 whitespace-nowrap">
+              <h3 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-display text-background transition-all duration-700 group-hover:text-[hsl(var(--color-accent))] group-hover:scale-110 whitespace-nowrap">
                 {text}
               </h3>
             </div>
           ))}
           {texts.map((text, index) => (
             <div
-              key={`left-second-${index}`}
-              className="flex-shrink-0 mx-8 group"
+              key={`third-${index}`}
+              className="flex-shrink-0 flex items-center group mx-8 md:mx-12 lg:mx-16"
             >
-              <h3 className="text-4xl md:text-6xl font-display text-background transition-all duration-700 group-hover:text-[hsl(var(--color-secondary))] group-hover:scale-110 whitespace-nowrap">
+              <h3 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-display text-background transition-all duration-700 group-hover:text-[hsl(var(--color-accent))] group-hover:scale-110 whitespace-nowrap">
                 {text}
               </h3>
             </div>

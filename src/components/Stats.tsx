@@ -6,7 +6,7 @@ export const Stats = () => {
   ];
 
   return (
-    <section className="px-6 md:px-12 py-16 bg-card border-y-2 border-foreground transition-all duration-700 hover:bg-[hsl(var(--color-background))] group">
+    <section className="px-6 md:px-12 py-16 bg-card border-b-2 border-foreground transition-all duration-700 hover:bg-[hsl(var(--color-background))] group">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-3 gap-8 md:gap-16">
           {stats.map((stat, index) => (

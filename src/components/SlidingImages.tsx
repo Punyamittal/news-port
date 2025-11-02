@@ -1,4 +1,4 @@
-export const SlidingImages = () => {
+export const SlidingImages = ({ id }: { id?: string }) => {
   const images = [
     { id: 1, url: "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?w=800&h=600&fit=crop" },
     { id: 2, url: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=800&h=600&fit=crop" },
@@ -9,7 +9,7 @@ export const SlidingImages = () => {
   ];
 
   return (
-    <section className="py-12 overflow-hidden border-y-2 border-foreground transition-all duration-700 hover:border-[hsl(var(--color-accent))]">
+    <section id={id} className="py-12 overflow-hidden transition-all duration-700">
       <div className="relative">
         <div className="flex animate-slide-left hover:pause">
           {/* First set of images */}

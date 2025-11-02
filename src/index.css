@@ -6,6 +6,17 @@
 All colors MUST be HSL.
 */
 
+/* Custom Font: ArtDeco Stencil Serif Display */
+@font-face {
+  font-family: 'ArtDeco Stencil Serif Display';
+  src: url('/fonts/ArtDeco-Stencil-Serif-Display.woff2') format('woff2'),
+       url('/fonts/ArtDeco-Stencil-Serif-Display.woff') format('woff'),
+       url('/fonts/ArtDeco-Stencil-Serif-Display.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 @layer base {
   :root {
     --background: 0 0% 98%;
@@ -85,4 +96,28 @@ All colors MUST be HSL.
   body {
     @apply bg-background text-foreground;
   }
+}
+
+/* Custom border with small lines pattern (dashed border) */
+.border-lines {
+  border: 2px dashed hsl(var(--foreground));
+  border-style: dashed;
+}
+
+/* Scroll up animation for testimonials */
+@keyframes scroll-up {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+.animate-scroll-up {
+  animation: scroll-up 20s linear infinite;
+}
+
+.animate-scroll-up:hover {
+  animation-play-state: paused;
 }

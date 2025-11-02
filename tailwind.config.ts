@@ -16,6 +16,9 @@ export default {
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],
         display: ['Bodoni Moda', 'Georgia', 'serif'],
+        'old-english': ['Old English Text MT', 'serif'],
+        'artdeco': ['ArtDeco Stencil Serif Display', 'serif'],
+        'broadway': ['Broadway', 'serif'],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -81,7 +84,7 @@ export default {
           "100%": { transform: "translateX(-100%)" },
         },
         "slide-right": {
-          "0%": { transform: "translateX(0)" },
+          "0%": { transform: "translateX(-100%)" },
           "100%": { transform: "translateX(100%)" },
         },
         "fade-in": {

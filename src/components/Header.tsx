@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import oipImage from "@/OIP.webp";
 
 export const Header = () => {
   const [currentDate, setCurrentDate] = useState("");
@@ -15,15 +16,17 @@ export const Header = () => {
   }, []);
 
   return (
-    <header className="border-b-2 border-foreground py-4 px-6 md:px-12 transition-all duration-700 hover:bg-[hsl(var(--color-background))] group">
-      <div className="max-w-7xl mx-auto flex items-center justify-between">
-        <div className="flex items-center gap-3">
-          <div className="w-10 h-10 bg-foreground rounded-sm transition-all duration-500 group-hover:bg-[hsl(var(--color-accent))] group-hover:rotate-12" />
-          <a href="/" className="font-display text-xl md:text-2xl tracking-tight transition-colors duration-500 group-hover:text-[hsl(var(--color-accent))]">
-            Design Daily
-          </a>
-        </div>
-        <time className="text-sm md:text-base text-muted-foreground font-light transition-colors duration-500 group-hover:text-[hsl(var(--color-primary))]">
+    <header className="border-b-2 border-foreground py-4 px-6 md:px-14 transition-all duration-700 hover:bg-[hsl(var(--color-background))] group relative">
+      <img 
+        src={oipImage} 
+        alt="Logo" 
+        className="absolute left-6 md:left-14 top-1/2 -translate-y-1/2 w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 object-contain grayscale transition-all duration-500 hover:grayscale-0"
+      />
+      <div className="max-w-7xl mx-auto flex items-center justify-center">
+        <a href="/" className="font-old-english text-5xl md:text-6xl lg:text-7xl tracking-tight transition-colors duration-500 group-hover:text-[hsl(var(--color-accent))]">
+          My Times
+        </a>
+        <time className="absolute right-6 md:right-12 text-sm md:text-base text-muted-foreground font-light transition-colors duration-500 group-hover:text-[hsl(var(--color-primary))]">
           {currentDate}
         </time>
       </div>
