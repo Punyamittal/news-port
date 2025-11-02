@@ -9,14 +9,14 @@ export const SlidingImages = ({ id }: { id?: string }) => {
   ];
 
   return (
-    <section id={id} className="py-12 overflow-hidden transition-all duration-700">
+    <section id={id} className="py-8 md:py-10 lg:py-12 overflow-hidden transition-all duration-700">
       <div className="relative">
         <div className="flex animate-slide-left hover:pause">
           {/* First set of images */}
           {images.map((image) => (
             <div
               key={`first-${image.id}`}
-              className="flex-shrink-0 w-80 h-64 mx-4 group"
+              className="flex-shrink-0 w-64 h-48 sm:w-72 sm:h-56 md:w-80 md:h-64 mx-2 sm:mx-3 md:mx-4 group"
             >
               <img
                 src={image.url}
@@ -29,7 +29,7 @@ export const SlidingImages = ({ id }: { id?: string }) => {
           {images.map((image) => (
             <div
               key={`second-${image.id}`}
-              className="flex-shrink-0 w-80 h-64 mx-4 group"
+              className="flex-shrink-0 w-64 h-48 sm:w-72 sm:h-56 md:w-80 md:h-64 mx-2 sm:mx-3 md:mx-4 group"
             >
               <img
                 src={image.url}

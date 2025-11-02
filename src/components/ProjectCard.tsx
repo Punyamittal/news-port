@@ -21,15 +21,15 @@ export const ProjectCard = ({ image, title, company, link, linkText = "Read" }: 
           />
         </div>
       </div>
-      <div className="p-6 space-y-3 transition-all duration-700 group-hover:bg-[hsl(var(--color-background))] flex-1 flex flex-col">
-        <h3 className="text-xl md:text-2xl font-display leading-tight transition-all duration-500 group-hover:text-[hsl(var(--color-accent))] line-clamp-3 min-h-[4.5rem]">
+      <div className="p-4 sm:p-5 md:p-6 space-y-2 sm:space-y-3 transition-all duration-700 group-hover:bg-[hsl(var(--color-background))] flex-1 flex flex-col">
+        <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-display leading-tight transition-all duration-500 group-hover:text-[hsl(var(--color-accent))] line-clamp-3 min-h-[3.5rem] sm:min-h-[4rem] md:min-h-[4.5rem]">
           {title}
         </h3>
-        <div className="flex items-center justify-between mt-auto">
-          <span className="text-sm text-muted-foreground transition-colors duration-500 group-hover:text-[hsl(var(--color-primary))]">
+        <div className="flex items-center justify-between mt-auto gap-2">
+          <span className="text-xs sm:text-sm text-muted-foreground transition-colors duration-500 group-hover:text-[hsl(var(--color-primary))] truncate">
             {company}
           </span>
-          <span className="text-sm font-medium transition-all duration-500 group-hover:translate-x-2 group-hover:text-[hsl(var(--color-accent))]">
+          <span className="text-xs sm:text-sm font-medium transition-all duration-500 group-hover:translate-x-2 group-hover:text-[hsl(var(--color-accent))] flex-shrink-0">
             {linkText} →
           </span>
         </div>

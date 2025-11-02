@@ -9,29 +9,32 @@ export const Navbar = () => {
   };
 
   return (
-    <nav className="border-t-2 border-b-2 border-foreground py-3 px-6 md:px-14">
-      <div className="max-w-7xl mx-auto flex items-center justify-between">
-        <div className="flex items-center gap-6 md:gap-8">
+    <nav className="border-t-2 border-b-2 border-foreground py-2 md:py-3 px-4 md:px-6 lg:px-14">
+      <div className="max-w-7xl mx-auto flex items-center justify-between gap-2 md:gap-4">
+        <div className="flex items-center gap-3 sm:gap-4 md:gap-6 lg:gap-8 overflow-x-auto scrollbar-hide -mx-4 sm:-mx-0 px-4 sm:px-0">
           <button 
             onClick={() => handleScrollTo("work")} 
-            className="text-sm md:text-base transition-colors duration-300 hover:text-[hsl(var(--color-accent))] cursor-pointer"
+            className="text-xs sm:text-sm md:text-base transition-colors duration-300 hover:text-[hsl(var(--color-accent))] cursor-pointer whitespace-nowrap py-2 min-w-[44px] touch-manipulation"
+            aria-label="Scroll to Work section"
           >
             Work
           </button>
           <button 
             onClick={() => handleScrollTo("about")} 
-            className="text-sm md:text-base transition-colors duration-300 hover:text-[hsl(var(--color-accent))] cursor-pointer"
+            className="text-xs sm:text-sm md:text-base transition-colors duration-300 hover:text-[hsl(var(--color-accent))] cursor-pointer whitespace-nowrap py-2 min-w-[44px] touch-manipulation"
+            aria-label="Scroll to About section"
           >
             About Me
           </button>
           <button 
             onClick={() => handleScrollTo("case-studies")} 
-            className="text-sm md:text-base transition-colors duration-300 hover:text-[hsl(var(--color-accent))] cursor-pointer"
+            className="text-xs sm:text-sm md:text-base transition-colors duration-300 hover:text-[hsl(var(--color-accent))] cursor-pointer whitespace-nowrap py-2 min-w-[44px] touch-manipulation"
+            aria-label="Scroll to Case Studies section"
           >
             Case Studies
           </button>
         </div>
-        <div className="flex items-center gap-4 md:gap-6">
+        <div className="flex items-center gap-2 sm:gap-3 md:gap-4 lg:gap-6 flex-shrink-0">
           <a 
             href="https://github.com" 
             target="_blank" 
@@ -39,7 +42,7 @@ export const Navbar = () => {
             className="transition-colors duration-300 hover:text-[hsl(var(--color-accent))]"
             aria-label="GitHub"
           >
-            <Github className="w-5 h-5 md:w-6 md:h-6" />
+            <Github className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" />
           </a>
           <a 
             href="https://linkedin.com" 
@@ -48,7 +51,7 @@ export const Navbar = () => {
             className="transition-colors duration-300 hover:text-[hsl(var(--color-accent))]"
             aria-label="LinkedIn"
           >
-            <Linkedin className="w-5 h-5 md:w-6 md:h-6" />
+            <Linkedin className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" />
           </a>
           <a 
             href="https://instagram.com" 
@@ -57,7 +60,7 @@ export const Navbar = () => {
             className="transition-colors duration-300 hover:text-[hsl(var(--color-accent))]"
             aria-label="Instagram"
           >
-            <Instagram className="w-5 h-5 md:w-6 md:h-6" />
+            <Instagram className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" />
           </a>
         </div>
       </div>

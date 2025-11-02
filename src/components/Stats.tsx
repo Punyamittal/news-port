@@ -6,9 +6,9 @@ export const Stats = () => {
   ];
 
   return (
-    <section className="px-6 md:px-12 py-16 bg-card border-b-2 border-foreground transition-all duration-700 hover:bg-[hsl(var(--color-background))] group">
+    <section className="px-4 md:px-6 lg:px-12 py-12 md:py-16 bg-card border-b-2 border-foreground transition-all duration-700 hover:bg-[hsl(var(--color-background))] group">
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-3 gap-8 md:gap-16">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 md:gap-12 lg:gap-16">
           {stats.map((stat, index) => (
             <div 
               key={index} 
@@ -16,7 +16,7 @@ export const Stats = () => {
               style={{ transitionDelay: `${index * 100}ms` }}
             >
               <div 
-                className="text-4xl md:text-6xl font-display transition-all duration-500 group-hover:scale-110"
+                className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-display transition-all duration-500 group-hover:scale-110"
                 style={{ 
                   color: `var(--foreground)`,
                   ['--tw-text-opacity' as string]: '1'
@@ -26,7 +26,7 @@ export const Stats = () => {
               >
                 {stat.value}
               </div>
-              <div className="text-sm md:text-base text-muted-foreground transition-colors duration-500 group-hover:text-[hsl(var(--color-primary))]">
+              <div className="text-xs sm:text-sm md:text-base text-muted-foreground transition-colors duration-500 group-hover:text-[hsl(var(--color-primary))]">
                 {stat.label}
               </div>
             </div>

@@ -50,15 +50,15 @@ export const RecentWork = ({ id }: { id?: string }) => {
   ];
 
   return (
-    <section id={id} className="px-6 md:px-12 py-16 border-b-2 border-foreground transition-all duration-700 hover:bg-[hsl(var(--color-background))] group">
+    <section id={id} className="px-4 md:px-6 lg:px-12 py-12 md:py-16 border-b-2 border-foreground transition-all duration-700 hover:bg-[hsl(var(--color-background))] group">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl md:text-5xl font-display mb-12 tracking-tight transition-colors duration-500 group-hover:text-[hsl(var(--color-accent))]">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-display mb-8 md:mb-12 tracking-tight transition-colors duration-500 group-hover:text-[hsl(var(--color-accent))]">
           recent work
         </h2>
         <div ref={emblaRef} className="overflow-hidden">
           <div className="flex">
             {projects.map((project, index) => (
-              <div key={index} className="min-w-0 shrink-0 w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-3">
+              <div key={index} className="min-w-0 shrink-0 w-full sm:w-[85%] md:w-1/2 lg:w-1/3 flex-shrink-0 px-2 sm:px-3">
                 <ProjectCard
                   image={project.image}
                   title={project.title}
